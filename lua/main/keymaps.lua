@@ -37,7 +37,7 @@ vim.keymap.set('v', '<leader>p', '"_dP')
 vim.keymap.set('n', '<leader>ro', ':set ro!<CR>', { desc = 'Toggle [R]ead-[O]nly' })
 
 -- Toggle relative number
-vim.keymap.set('n', '<leader>n', ':set relativenumber!<CR>', { desc = 'Toggle Relative-[N]umber' })
+vim.keymap.set('n', '<leader>tn', ':set relativenumber!<CR>', { desc = '[T]oggle Relative-[N]umber' })
 
 -- [[ Highlight on yank ]]
 -- See `:help vim.highlight.on_yank()`
