@@ -28,6 +28,9 @@ if vim.fn.has('win64') or vim.fn.has('win32') or vim.fn.has('win32unix') then
   vim.keymap.set({ 'i', 'c' }, '<S-Insert>', '<C-R>+')
 end
 
+-- Exit Terminal
+vim.keymap.set('t', '<Esc><Esc>', '<C-\\><C-n>', { desc = 'Exit Terminal' })
+
 -- Delete/Paste w/o buffer
 vim.keymap.set({ 'n', 'v' }, '<Del>', '"_d')
 vim.keymap.set('n', '<Del><Del>', '"_dd')
@@ -37,7 +40,7 @@ vim.keymap.set('v', '<leader>p', '"_dP')
 vim.keymap.set('n', '<leader>ro', ':set ro!<CR>', { desc = 'Toggle [R]ead-[O]nly' })
 
 -- Toggle relative number
-vim.keymap.set('n', '<leader>n', ':set relativenumber!<CR>', { desc = 'Toggle Relative-[N]umber' })
+vim.keymap.set('n', '<leader>tn', ':set relativenumber!<CR>', { desc = '[T]oggle Relative-[N]umber' })
 
 -- [[ Highlight on yank ]]
 -- See `:help vim.highlight.on_yank()`
