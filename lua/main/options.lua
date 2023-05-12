@@ -23,6 +23,13 @@ vim.o.hlsearch = false
 vim.wo.number = true
 vim.opt.relativenumber = true
 
+-- Tabs handling
+vim.bo.tabstop = 4
+vim.bo.shiftwidth = 4
+
+vim.go.shiftround = true
+vim.go.smartcase = true
+
 -- Enable mouse mode
 vim.o.mouse = 'a'
 
