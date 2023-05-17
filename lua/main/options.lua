@@ -4,31 +4,31 @@
 vim.o.fileformats = 'unix,dos'
 
 -- No wrapping
-vim.wo.wrap = false
+vim.o.wrap = false
 
 -- Change split behaviour
-vim.go.splitright = true
-vim.go.splitbelow = true
+vim.o.splitright = true
+vim.o.splitbelow = true
 
 -- Scroll when <n> lines from top/bottom
-vim.wo.scrolloff = 5
+vim.o.scrolloff = 5
 
 -- Spelling language
-vim.opt.spelllang = 'en_gb'
+vim.o.spelllang = 'en_gb'
 
 -- Set highlight on search
 vim.o.hlsearch = false
 
 -- Make line numbers default
-vim.wo.number = true
-vim.opt.relativenumber = true
+vim.o.number = true
+vim.o.relativenumber = true
 
 -- Tabs handling
-vim.bo.tabstop = 4
-vim.bo.shiftwidth = 4
+vim.o.tabstop = 4
+vim.o.shiftwidth = 4
 
-vim.go.shiftround = true
-vim.go.smartcase = true
+vim.o.shiftround = true
+vim.o.smartcase = true
 
 -- Enable mouse mode
 vim.o.mouse = 'a'
