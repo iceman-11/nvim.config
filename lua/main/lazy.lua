@@ -141,7 +141,7 @@ require('lazy').setup({
 
   require 'kickstart.plugins.autoformat',
 
-  -- Autoload plugins in 'iceman/plugins'
+  -- Autoload plugins in 'main/plugins'
   -- Keep commented if the folder is empty
   -- { import = 'main.plugins' },
 }, {})
