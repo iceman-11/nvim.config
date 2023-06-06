@@ -97,6 +97,21 @@ require('lazy').setup({
         component_separators = '|',
         section_separators = '',
       },
+      sections = {
+        lualine_c = {
+          'filename',
+          {
+            'vim.o.spelllang',
+            cond = function() return vim.o.spell end
+          }
+        },
+        lualine_x = {
+          '%{&et?"s":"t"}:%{&sw}',
+          'encoding',
+          'fileformat',
+          'filetype'
+        },
+      },
     },
   },
 
