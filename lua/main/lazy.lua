@@ -17,6 +17,15 @@ vim.opt.rtp:prepend(lazypath)
 -- Find the make command (make/cmake)
 local make = vim.fn.executable('make') == 1 and 'make' or 'cmake'
 
+-- Show indentation
+local show_indentation = function()
+  if not vim.o.expandtab then
+    return '↹'
+  else
+    return vim.o.shiftwidth
+  end
+end
+
 -- NOTE: Here is where you install your plugins.
 --  You can configure plugins using the `config` key.
 --
@@ -106,7 +115,7 @@ require('lazy').setup({
           }
         },
         lualine_x = {
-          '%{&et?"s":"t"}:%{&sw}',
+          show_indentation,
           'encoding',
           'fileformat',
           'filetype'
