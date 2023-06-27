@@ -20,7 +20,7 @@ vim.keymap.set('n', '<leader>ts', ':set invspell<CR>', { silent = true, desc = '
 vim.keymap.set('n', '<leader>ce', ':next $MYVIMRC<CR>', { silent = true, desc = '[C]onfiguration [E]dit' })
 
 -- Go to current buffer directory
-vim.keymap.set('n', '<leader>bd', ':cd %:h<CR>', { silent = true, desc = 'Go to [B]uffer [D]irectory' })
+vim.keymap.set('n', '<leader>bd', ':cd %:h<CR>:pwd<CR>', { silent = true, desc = 'Go to [B]uffer [D]irectory' })
 
 -- Set "Shift + Insert" for paste
 if vim.fn.has('win64') or vim.fn.has('win32') or vim.fn.has('win32unix') then
